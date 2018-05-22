@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+	<h1>klanten overzicht</h1>
+	{% for klant in klanten %}
+		<ul>
+			<li style="color:red">
+			<a href="{{ path('klantwijzigen',{'Klantnummer':klant.klantnummer}) }}">
+
+			{{ klant.voornaam }}, {{ klant.achternaam }}, {{ klant.woonplaats }}, {{ klant.telefoonnummer }}, {{ klant.email }}
+
+			</a>
+			</li>
+		</ul>
+	{% endfor %}
+{% endblock %}

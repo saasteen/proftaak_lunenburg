@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+	<h1>producten overzicht</h1>
+	{% for product in producten %}
+		<ul>
+			<li style="color:red">
+			<a href="{{ path('productwijzigen',{'barcode':product.barcode}) }}">
+				{{ product.barcode }}, {{ product.naam }}, {{ product.merk }}, {{ product.inkoopprijs }}
+				</a>
+
+			</li>
+		</ul>
+	{% endfor %}
+{% endblock %}

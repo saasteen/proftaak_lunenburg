@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<form <html lang="en">
+<head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<div class="container">
+  <h2>Klanten toevoegen</h2>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="col-sm-2 control-label">klantnummer</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="focusedInput" type="text" value="">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">voornaam</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="focusedInput" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">achternaam</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="focusedInput" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">woonplaats</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="focusedInput" type="text" value="">
+    </div>
+    </div>
+    </fieldset>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">telefoonnummer</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="focusedInput" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">email</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="focusedInput" type="text" value="">
+    </div>
+    </div>
+    <input class="btn btn-default" type="submit">
+    <a href="javascript:history.back()">Annuleren</a>
+  </form>
+</div>
+
+</body>
+</html>
+
+</form>
+{% endblock %}
